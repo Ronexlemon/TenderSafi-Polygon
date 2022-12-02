@@ -16,7 +16,7 @@ function TenderAllocation() {
 const getProviderOrSigner= async(needSigner = false)=>{
   const provider =await  Web3ModalRef.current.connect();
   const web3Provider = new providers.Web3Provider(provider);
- // check if network is mumbai
+ // check if network is Mumbai
  const {chainId}  = await web3Provider.getNetwork();
  if(chainId !==5){
   window.alert("Change network to Mumbai");
@@ -89,7 +89,7 @@ const approveTender =async (ids)=>{
 // },[])
 useEffect(()=>{
   Web3ModalRef.current = new Web3Modal({
-      network: "mumbai",
+      network: "Mumbai",
       providerOptions: {},
       disableInjectedProvider: false,
       cacheProvider:false

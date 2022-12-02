@@ -25,11 +25,11 @@ const BiderForm = () => {
   const getProviderOrSigner = async (needSigner = false) => {
     const provider = await Web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
-    // check if network is mumbai
+    // check if network is Mumbai
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 5) {
-      window.alert("Change network to mumbai");
-      throw new Error("Change network To mumbai");
+      window.alert("Change network to Mumbai");
+      throw new Error("Change network To Mumbai");
     }
     if (needSigner) {
       const signer = web3Provider.getSigner();
@@ -41,7 +41,7 @@ const BiderForm = () => {
   //call the metamask on page reload
   useEffect(() => {
     Web3ModalRef.current = new Web3Modal({
-      network: "mumbai",
+      network: "Mumbai",
       providerOptions: {},
       disableInjectedProvider: false,
       cacheProvider: false,

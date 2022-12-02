@@ -59,7 +59,7 @@ const AvailableTenders = () => {
         //connect metamask
         const provider = await web3ModalRef.current.connect();
         const web3Provider = new providers.Web3Provider(provider);
-        //check if user is connected to mumbai network
+        //check if user is connected to Mumbai network
         const { chainId } = await web3Provider.getNetwork();
         if (chainId !== 5) {
             window.alert("Change network to Mumbai");
@@ -67,7 +67,7 @@ const AvailableTenders = () => {
 
 
         }
-        // alert("network is mumbai")
+        // alert("network is Mumbai")
         //if need signer for transactions
         if (needSigner) {
             const signer = web3Provider.getSigner();
@@ -80,7 +80,7 @@ const AvailableTenders = () => {
     useEffect(() => {
 
         web3ModalRef.current = new Web3Modal({
-            network: "mumbai",
+            network: "Mumbai",
             providerOptions: {},
             disableInjectedProvider: false,
             cacheProvider: false
