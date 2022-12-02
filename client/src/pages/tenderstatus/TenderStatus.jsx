@@ -16,11 +16,11 @@ function TenderStatus() {
   const getProviderOrSigner = async (needSigner = false) => {
     const provider = await Web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
-    // check if network is goerli
+    // check if network is Mumbai
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 5) {
-      window.alert("Change network to Goerli");
-      throw new Error("Change network To Goerli");
+      window.alert("Change network to Mumbai");
+      throw new Error("Change network To Mumbai");
     }
 
     if (needSigner) {
@@ -88,7 +88,7 @@ function TenderStatus() {
   // },[])
   useEffect(() => {
     Web3ModalRef.current = new Web3Modal({
-      network: "goerli",
+      network: "mumbai",
       providerOptions: {},
       disableInjectedProvider: false,
       cacheProvider: false
