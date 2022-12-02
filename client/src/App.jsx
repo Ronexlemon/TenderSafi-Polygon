@@ -1,5 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './App.css'
+import './App.css';
+import Approve from "./pages/approve/Approve";
+import BiderForm from "./pages/biderpostform/BiderForm";
+import TenderAllocation from "./pages/tenderallocation/TenderAllocation";
+import AvailableTenders from "./pages/tenderpost/AvailableTenders";
+import DisplayTenders from "./pages/tenderpost/DisplayAvailableTenders";
+import Tenders from "./pages/tenderpost/Tenders";
+import TenderStatus from "./pages/tenderstatus/TenderStatus";
+// import Tokens from "./pages/Tokens";
 
 function App() {
 
