@@ -3,6 +3,7 @@ import Explore from '../components/Explore'
 import Features from '../components/Features'
 import HeroText from '../components/HeroText'
 import Navbar from '../components/Navbar'
+import Volunteer from '../components/Volunteer'
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,12 @@ const LandingPage = () => {
       </section>
       <section className="h-screen mb-10">
         <Explore />
+      </section>
+      <section className="h-screen pt-10 bg-light-purple">
+        <h1 className="text-center font-jakarta text-indigo-900 text-3xl font-bold w-[100%] py-12">
+          Users Around The World
+        </h1>
+        <Volunteer />
       </section>
     </div>
   )
