@@ -1,8 +1,10 @@
 import React from 'react'
 import Explore from '../components/Explore'
 import Features from '../components/Features'
+import Footer from '../components/Footer'
 import HeroText from '../components/HeroText'
 import Navbar from '../components/Navbar'
+import Subscription from '../components/Subscription'
 import Volunteer from '../components/Volunteer'
 
 const LandingPage = () => {
@@ -29,6 +31,10 @@ const LandingPage = () => {
         </h1>
         <Volunteer />
       </section>
+      <footer>
+        <Subscription />
+        <Footer />
+      </footer>
     </div>
   )
 }
