@@ -1,4 +1,5 @@
 import React from 'react'
+import Features from '../components/Features'
 import HeroText from '../components/HeroText'
 import Navbar from '../components/Navbar'
 
@@ -14,6 +15,9 @@ const LandingPage = () => {
         <Navbar />
         <HeroText />
       </header>
+      <section>
+        <Features />
+      </section>
     </div>
   )
 }
