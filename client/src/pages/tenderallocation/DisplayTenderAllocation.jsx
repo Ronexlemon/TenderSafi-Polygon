@@ -1,13 +1,7 @@
-import "./tender_allocation.css";
+
 import React, { useState, useEffect } from "react";
-import { AiOutlinePhone } from "react-icons/ai";
-import { RiBuilding2Fill } from "react-icons/ri";
-import { BsTrash } from "react-icons/bs";
-import { MdDateRange } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { MdOutlineDescription } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
-import NavbarHome from "../../components/NavbarHome";
+
+
 
 const DisplayTenderAllocation = (props) => {
   useEffect(() => {

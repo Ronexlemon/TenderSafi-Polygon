@@ -6,6 +6,7 @@ import HeroText from '../components/HeroText'
 import Navbar from '../components/Navbar'
 import Subscription from '../components/Subscription'
 import Volunteer from '../components/Volunteer'
+import backgroundImage from "../assets/images/HeroBackgroundImage.svg";
 
 const LandingPage = () => {
   return (
@@ -19,7 +20,7 @@ const LandingPage = () => {
         <Navbar />
         <HeroText />
       </header>
-      <section>
+      <section id="features">
         <Features />
       </section>
       <section className="h-screen mb-10">
@@ -31,7 +32,7 @@ const LandingPage = () => {
         </h1>
         <Volunteer />
       </section>
-      <footer>
+      <footer id="contact">
         <Subscription />
         <Footer />
       </footer>

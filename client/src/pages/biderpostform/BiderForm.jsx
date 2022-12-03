@@ -1,5 +1,4 @@
 import React from "react";
-import "./bider_module.css";
 import { BiderAbi } from "../../abi/bidercontract_abi";
 import Web3Modal from "web3modal";
 import { useRef, useEffect, useState } from "react";
@@ -27,7 +26,7 @@ const BiderForm = () => {
     const web3Provider = new providers.Web3Provider(provider);
     // check if network is Mumbai
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
+    if (chainId !== 80001) {
       window.alert("Change network to Mumbai");
       throw new Error("Change network To Mumbai");
     }

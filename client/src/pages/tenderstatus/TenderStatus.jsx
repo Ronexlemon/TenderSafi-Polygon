@@ -18,7 +18,7 @@ function TenderStatus() {
     const web3Provider = new providers.Web3Provider(provider);
     // check if network is Mumbai
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
+    if (chainId !== 80001) {
       window.alert("Change network to Mumbai");
       throw new Error("Change network To Mumbai");
     }

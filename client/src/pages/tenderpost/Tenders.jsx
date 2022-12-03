@@ -1,14 +1,11 @@
 import React from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
-import "./tenders_module.css";
-import DisplayTenders from "./DisplayAvailableTenders";
+
 import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
-//import {ABI} from "../tenderpost_abi";
+
 import { BiderAbi } from "../../abi/bidercontract_abi";
-//import Web3 from 'web3';
-import { BigNumber } from "ethers";
-import { SiBitcoincash } from "react-icons/si";
+
 import { useNavigate } from "react-router-dom";
 import NavbarHome from "../../components/NavbarHome";
 //from display
@@ -136,7 +133,7 @@ const Tenders = () => {
     const web3Provider = new providers.Web3Provider(provider);
     //check if user is connected to Mumbai network
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
+    if (chainId !== 80001) {
       window.alert("Change network to Mumbai");
       throw new Error("Change network To Mumbai");
     }

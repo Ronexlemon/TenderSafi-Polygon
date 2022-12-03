@@ -3,7 +3,6 @@ import DisplayTenders from "./DisplayAvailableTenders";
 import { useState, useEffect, useRef, useCallback } from "react";
 import Web3Modal from "web3modal"
 import { providers, Contract } from "ethers";
-//import {ABI} from "../tenderpost_abi";
 import { BiderAbi } from "../../abi/bidercontract_abi";
 
 
@@ -13,7 +12,7 @@ const AvailableTenders = () => {
     const [tenderslength, setLength] = useState(0);
     const web3ModalRef = useRef();
     const Approve = () => {
-        alert("yooj");
+        alert("yooh");
     }
     //getAllTenders
     const getAllTenders = useCallback(async () => {
