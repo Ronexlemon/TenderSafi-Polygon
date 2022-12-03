@@ -3,17 +3,16 @@ import DisplayTenders from "./DisplayAvailableTenders";
 import { useState, useEffect, useRef, useCallback } from "react";
 import Web3Modal from "web3modal"
 import { providers, Contract } from "ethers";
-//import {ABI} from "../tenderpost_abi";
 import { BiderAbi } from "../../abi/bidercontract_abi";
 
 
 const AvailableTenders = () => {
     const [Tenders, setTenders] = useState([]);
-    const TenderOwnerAddress ="0x13A44fFe2a9166Ac6dA349837d30B3f47D79b3E8";
+    const TenderOwnerAddress ="0x8fF171857abe05f4642e90Ec243A9553f0853678";
     const [tenderslength, setLength] = useState(0);
     const web3ModalRef = useRef();
     const Approve = () => {
-        alert("yooj");
+        alert("yooh");
     }
     //getAllTenders
     const getAllTenders = useCallback(async () => {

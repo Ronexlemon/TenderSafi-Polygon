@@ -10,7 +10,7 @@ function TenderStatus() {
   const [walletconnect, setWalletConnect] = useState(false);
   const [BidTenders, setBidTenders] = useState([]);
   const [index, setIndex] = useState();
-  const ContractBiderAddress = "0x13A44fFe2a9166Ac6dA349837d30B3f47D79b3E8";
+  const ContractBiderAddress = "0x8fF171857abe05f4642e90Ec243A9553f0853678";
   const Web3ModalRef = useRef();
   //provide sugner or provider
   const getProviderOrSigner = async (needSigner = false) => {
@@ -18,7 +18,7 @@ function TenderStatus() {
     const web3Provider = new providers.Web3Provider(provider);
     // check if network is Mumbai
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
+    if (chainId !== 80001) {
       window.alert("Change network to Mumbai");
       throw new Error("Change network To Mumbai");
     }
