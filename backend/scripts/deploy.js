@@ -2,7 +2,7 @@ const {ethers} = require("hardhat")
 
 async function main(){
     //get the contract
-    const TenderSafiPolygonContract = await ethers.getFactoryContract("Bider");
+    const TenderSafiPolygonContract = await ethers.getContractFactory("Bider");
     //deploy the contract
     const TenderSafiPolygonContractdeploy = await TenderSafiPolygonContract.deploy();
     //await deployment
