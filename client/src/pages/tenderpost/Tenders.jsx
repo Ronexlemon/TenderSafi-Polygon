@@ -300,7 +300,7 @@ const Tenders = () => {
                       type="text"
                       id="company"
                       name="company"
-                      placeHolder="Company Name..."
+                      placeholder="Company Name..."
                       required
                       onChange={(e) => setCompanyName(e.target.value)}
                       value={companyName}
@@ -317,7 +317,7 @@ const Tenders = () => {
                       type="text"
                       id="description"
                       name="description"
-                      placeHolder="Tender description..."
+                      placeholder="Tender description..."
                       required
                       onChange={(e) => setDescription(e.target.value)}
                       value={description}
@@ -347,7 +347,7 @@ const Tenders = () => {
                       type="text"
                       id="contact"
                       name="contact"
-                      placeHolder="0792271915"
+                      placeholder="0792271915"
                       required
                       onChange={(e) => setContact(e.target.value)}
                       value={contact}
@@ -362,7 +362,7 @@ const Tenders = () => {
                       type="email"
                       id="email"
                       name="email"
-                      placeHolder="stansmith@gmail.com"
+                      placeholder="stansmith@gmail.com"
                       required
                       onChange={(e) => setEmail(e.target.value)}
                       value={email}

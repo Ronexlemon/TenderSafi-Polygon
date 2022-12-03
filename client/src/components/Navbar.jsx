@@ -19,14 +19,14 @@ const Navbar = () => {
 
       </div>
       <div className="block sm:hidden">
-        <i class="bx bx-menu bx-md text-black" onClick={toggleMenu}></i>
+        <i className="bx bx-menu bx-md text-black" onClick={toggleMenu}></i>
       </div>
       <div
         className="absolute top-0 sm:block p-5 sm:p-0 min-w-[200px] w-[100%]"
         style={showMenu ? { display: "block" } : { display: "none" }}
       >
         <nav>
-          <i class="bx bx-x bx-sm text-black" onClick={toggleMenu}></i>
+          <i className="bx bx-x bx-sm text-black" onClick={toggleMenu}></i>
           <ul className=" flex flex-col sm:flex-row justify-around font-josefin text-base md:text-lg text-black font-extrabold w-auto">
             <Link to={"/"}>
               <li className="my-2 mx-1 w-[100%] min-w-[100px] ">Home</li>
