@@ -31,10 +31,10 @@ const Navbar = () => {
             <Link to={"/"}>
               <li className="my-2 mx-1 w-[100%] min-w-[100px] ">Home</li>
             </Link>
-            <Link to={"/features"}>
+            <Link to={"/"}>
               <li className="my-2 mx-1 w-[100%] min-w-[100px] ">Features</li>
             </Link>
-            <Link to={"/contact"}>
+            <Link to={"/"}>
               <li className="my-2 mx-1 w-[100%] min-w-[100px] ">Contact Us</li>
             </Link>
           </ul>

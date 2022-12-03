@@ -126,6 +126,7 @@ const Tenders = () => {
     setaddress(accounts);
   };
   const navigate = useNavigate();
+  
 
   const getProviderOrSigner = async (needSigner = false) => {
     //connect metamask

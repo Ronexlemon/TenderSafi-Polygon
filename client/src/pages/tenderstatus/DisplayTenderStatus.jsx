@@ -39,8 +39,9 @@ const DisplayTenderStatus = (props) => {
                   <td className="py-3 px-2 text-left ">
                     <div className="flex items-center">
                       <div className="mr-2"></div>
-                      <a href={tender.goodDealsWith} target="_blank">
-                        link
+                      <span className="font-bold font-josefin mr-2">Document: </span> 
+                      <a className="font-josefin" href={tender.goodDealsWith} target="_blank">
+                         Link
                       </a>
                     </div>
                   </td>
